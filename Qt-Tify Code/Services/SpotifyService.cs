@@ -18,18 +18,17 @@ namespace ConsumeSpotifyWebAPI.Services
             _httpClient = httpClient;
         }
 
-        public async Task<IEnumerable<Release>> GetNewReleases(string countryCode, int limit, string accessToken)
+        public async Task<IEnumerable<Release>> GetNewReleases(string countryCode, int limit, string accessToken) //Funcion que devuelve los nuevos lanzamientos. Los mismos parametros de ISpotifyService
         {
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken); //autorización con token (hay que poner siempre en cada funcion)
 
-            var response = await _httpClient.GetAsync($"browse/new-releases?country={countryCode}&limit={limit}");
-
-            response.EnsureSuccessStatusCode();
+            var response = await _httpClient.GetAsync($"browse/new-releases?country={countryCode}&limit={limit}"); //petición http, ni puta idea. Supongo que varía con cada función
+            response.EnsureSuccessStatusCode(); //Chequea o valida la petición
 
             using var responseStream = await response.Content.ReadAsStreamAsync();
-            var responseObject = await JsonSerializer.DeserializeAsync<GetNewReleaseResult>(responseStream);
+            var responseObject = await JsonSerializer.DeserializeAsync<GetNewReleaseResult>(responseStream); //Llama a la clase de la carpeta Models
 
-            return responseObject?.albums?.items.Select(i => new Release
+            return responseObject?.albums?.items.Select(i => new Release //Retorna a la función un conjunto de canciones con la data
             {
                 Name = i.name,
                 Date = i.release_date,

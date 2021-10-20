@@ -31,26 +31,26 @@ namespace ConsumeSpotifyWebAPI.Controllers
         {
             var newReleases = await GetReleases();
 
-            return View(newReleases);
+            return View(newReleases); //Lo manda y se lo deja picando al frontend
         }
 
-        private async Task<IEnumerable<Release>> GetReleases()
+        private async Task<IEnumerable<Release>> GetReleases() //Parametros dados del new releases
         {
             try
             {
-                var token = await _spotifyAccountService.GetToken(
+                var token = await _spotifyAccountService.GetToken( //Token de autorización para entrar a la API de spotify
                     _configuration["Spotify:ClientId"],
                     _configuration["Spotify:ClientSecret"]);
 
-                var newReleases = await _spotifyService.GetNewReleases("US", 20, token);
+                var newReleases = await _spotifyService.GetNewReleases("US", 20, token); //parametros especificos de la función new releases
 
                 return newReleases;
             }
-            catch (Exception ex)
+            catch (Exception ex) //En caso de que no pueda ejecutar la función
             {
                 Debug.Write(ex);
 
-                return Enumerable.Empty<Release>();
+                return Enumerable.Empty<Release>(); //Devuelve conjunto vacío
             }
         }
 
