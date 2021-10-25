@@ -11,24 +11,24 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/0f4035664a.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <nav class="navbar">
-      <label class="navbar__logo">QT-Tify</label>
-      <ul class="navbar__ul">
-        <li class="navbar__li"><a class="navbar__a" href="#">Opción 1</a></li>
-        <li class="navbar__li"><a class="navbar__a" href="#">Opción 2</a></li>
-        <li class="navbar__li"><a class="navbar__a" href="#">Opción 3</a></li>
-        <li class="navbar__li"><a class="navbar__a" href="#">Opción 4</a></li>
-      </ul>
-      <label id="icon">
-        <i class="fas fa-bars"></i>
-      </label>
-    </nav>
+    <div class="nav-container">
+      <nav class="navbar">
+        <h1 id="navbar__logo">QT-TIFY</h1>
+        <div class="menu__toggle" id="mobile__menu">
+          <span class="menu__bar"></span>
+          <span class="menu__bar"></span>
+          <span class="menu__bar"></span>
+        </div>
+        <ul class="navbar__ul">
+          <li class="navbar__li"><a href="#" class="navbar__a">Opción 1</a></li>
+          <li class="navbar__li"><a href="#" class="navbar__a">Opción 2</a></li>
+          <li class="navbar__li"><a href="#" class="navbar__a">Opción 3</a></li>
+          <li class="navbar__li"><a href="#" class="navbar__a">Opción 4</a></li>
+        </ul>
+      </nav>
+    </div>
       <footer>
         <div class="albumes-recomendados">
           <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
@@ -63,6 +63,7 @@
           <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
         </div>
       </footer>
+  
     <script src="pantalla-inicio.js"></script>
   </body>
 </html>

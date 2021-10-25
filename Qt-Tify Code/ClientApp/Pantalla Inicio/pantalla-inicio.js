@@ -1,6 +1,9 @@
-const nav = document.querySelector('.navbar__ul');
-document.getElementById("icon").onclick = function() {toggleActive()};
+//#region navbar
+const menu = document.querySelector("#mobile__menu");
+const menuLinks = document.querySelector(".navbar__ul")
 
-function toggleActive(){
-    nav.classList.toggle('navbar__ul-active');
-}
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});
+//#endregion
