@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  width: 100%;
+  background: #222222;
+}
+
+.navbar__logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 100px;
+  line-height: 80px;
+}
+
+.navbar__ul {
+  float: right;
+  margin-right: 40px;
+}
+
+.navbar__li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+
+.navbar__a {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.navbar__a:hover {
+  color: #ebcd47;
+  transition: 0.9s;
+}
+
+.navbar__a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  -webkit-transform: translateX(-50%) scaleX(0);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: transform 250ms;
+  transition: transform 250ms;
+}
+
+.navbar__a:hover::after {
+  -webkit-transform: translateX(-50%) scaleX(1);
+  transform: translateX(-50%) scaleX(1);
+}
+
+#icon {
+  color: #fff;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 1048px) {
+  .navbar__logo {
+    font-size: 32px;
+    padding-left: 60px;
+  }
+
+  .navbar__ul {
+    margin-right: 20px;
+  }
+
+  .navbar__a{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 909px){
+    #icon{
+        display: block;
+    }
+
+    .navbar__ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #222222;
+        top: 80px;
+        transform: translateX(100%);
+        transition: transform .5s ease-in;
+        text-align: center;
+    }
+
+    .navbar__li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .navbar__a{
+        font-size: 20px;
+    }
+
+    .navbar__a:hover {
+        color: #45D7EB;
+      }
+
+    .navbar__ul-active{
+        transform: translateX(0);
+    }
+}
