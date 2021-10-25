@@ -16,8 +16,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-.nav-container {
-  width: 100%;
+.nav-container { width: 100%;
   background-color: var(--darkgray);
 }
 
@@ -165,3 +164,4 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
