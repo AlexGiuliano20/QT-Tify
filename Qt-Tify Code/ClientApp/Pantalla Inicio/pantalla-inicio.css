@@ -260,7 +260,7 @@ footer {
   bottom: 0;
 }
 
-.albumes-recomendados {
+.carousel {
   display: flex;
   align-items: center;
   position: relative;
@@ -327,30 +327,42 @@ footer {
   scroll-behavior: smooth;
 }
 
-.carousel {
+.carousel__elemento {
   display: flex;
   flex-wrap: nowrap;
 }
 
-.album {
+.carousel__album {
   min-width: 10%;
   transition: 0.3s ease all;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.album:hover {
+.carousel__album:hover {
   transform: scale(1.2);
   transform-origin: center;
 }
 
-.album img {
+.carousel__album img {
   width: 100%;
   vertical-align: top;
   outline: rgba(255, 255, 255, 0.9) solid 2px;
 }
 
+@media screen and (max-width: 1200px) {
+  .carousel__album {
+    min-width: 20%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
-  .albumes-recomendados {
+  .carousel__album {
+    min-width: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
     display: none;
   }
 }
