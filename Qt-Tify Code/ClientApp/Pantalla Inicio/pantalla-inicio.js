@@ -10,7 +10,7 @@ menu.addEventListener("click", function () {
 
 //#region  caroucel
 const fila = document.querySelector(".carousel__contenedor");
-const albumes = document.querySelector(".album");
+const albumes = document.querySelector(".carousel__album");
 const flechaIzquierda = document.getElementById("flecha-izquierda");
 const flechaDerecha = document.getElementById("flecha-derecha");
 
