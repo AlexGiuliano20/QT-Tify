@@ -7,7 +7,7 @@
   --third-color: #da3beb;
   --third-color-alt: #92209e;
   --white: #fff;
-  --white-alt: #ddd
+  --white-alt: #ddd;
 }
 /* NAVBAR */
 * {
@@ -224,7 +224,8 @@ footer {
   right: 0;
 }
 
-.button__bar-left, .button__bar-right{
+.button__bar-left,
+.button__bar-right {
   display: block;
   width: 20px;
   height: 6.5px;
@@ -233,7 +234,7 @@ footer {
   background: var(--white-alt);
 }
 
-.button__bar-left:nth-child(1){
+.button__bar-left:nth-child(1) {
   transform: translateY(1px) rotate(-40deg);
 }
 
@@ -241,11 +242,11 @@ footer {
   transform: translateY(-1px) rotate(40deg);
 }
 
-.button__bar-right:nth-child(1){
+.button__bar-right:nth-child(1) {
   transform: translateY(1px) rotate(40deg);
 }
 
-.button__bar-right:nth-child(2){
+.button__bar-right:nth-child(2) {
   transform: translateY(-1px) rotate(-40deg);
 }
 
