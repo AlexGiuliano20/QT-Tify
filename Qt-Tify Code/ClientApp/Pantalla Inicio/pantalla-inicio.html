@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QT-TIFY</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="pantalla-inicio.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="nav-container">
-      <nav class="navbar">
-        <h1 id="navbar__logo">QT-TIFY</h1>
-        <div class="menu__toggle" id="mobile__menu">
-          <span class="menu__bar"></span> 
-          <span class="menu__bar"></span>
-          <span class="menu__bar"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QT-TIFY</title>
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="pantalla-inicio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="nav-container">
+    <nav class="navbar">
+      <h1 id="navbar__logo">QT-TIFY</h1>
+      <div class="menu__toggle" id="mobile__menu">
+        <span class="menu__bar"></span> 
+        <span class="menu__bar"></span>
+        <span class="menu__bar"></span>
+      </div>
+      <ul class="navbar__ul">
+        <li class="navbar__li"><a href="#" class="navbar__a">Opción 1</a></li>
+        <li class="navbar__li"><a href="#" class="navbar__a">Opción 2</a></li>
+        <li class="navbar__li"><a href="#" class="navbar__a">Opción 3</a></li>
+        <li class="navbar__li"><a href="#" class="navbar__a">Opción 4</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <footer>
+    <div class="albumes-recomendados">
+      <button role="button" id="flecha-izquierda" class="flecha-izquierda">
+        <i class="fas fa-angle-left"></i>
+      </button>
+
+      <div class="carousel__contenedor">
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
         </div>
-        <ul class="navbar__ul">
-          <li class="navbar__li"><a href="#" class="navbar__a">Opción 1</a></li>
-          <li class="navbar__li"><a href="#" class="navbar__a">Opción 2</a></li>
-          <li class="navbar__li"><a href="#" class="navbar__a">Opción 3</a></li>
-          <li class="navbar__li"><a href="#" class="navbar__a">Opción 4</a></li>
-        </ul>
-      </nav>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+        <div class="carousel__album">
+          <a href="#">
+            <div class="album"></div>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <footer>
-      <div class="albumes-recomendados">
-        <button role="button" id="flecha-izquierda" class="flecha-izquierda">
-          <i class="fas fa-angle-left"></i>
-        </button>
+    <button role="button" id="flecha-derecha" class="flecha-derecha">
+      <i class="fas fa-angle-right"></i>
+    </button>
+    </div>
+  </footer>
 
-        <div class="carousel__contenedor">
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-            <div class="carousel__album">
-              <a href="#"><div class="album"></div></a>
-            </div>
-          </div>
-        </div>
+  <script src="pantalla-inicio.js"></script>
+</body>
 
-        <button role="button" id="flecha-derecha" class="flecha-derecha">
-          <i class="fas fa-angle-right"></i>
-        </button>
-      </div>
-    </footer>
-
-    <script src="pantalla-inicio.js"></script>
-  </body>
 </html>
