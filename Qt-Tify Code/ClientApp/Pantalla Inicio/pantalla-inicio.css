@@ -180,3 +180,81 @@
     font-size: 20px;
   }
 }
+
+/* FOOTER */
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.albumes-recomendados {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 50%;
+  top: calc(50% - 25%);
+  line-height: 40px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 500;
+  transition: 0.2s ease all;
+}
+
+.flecha-izquierda:hover,
+.flecha-derecha:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.flecha-izquierda {
+  left: 0;
+}
+
+.flecha-derecha {
+  right: 0;
+}
+
+.carousel__contenedor {
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.album {
+  min-width: 10%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  /* outline:rgba(255, 255, 255, 0.9) solid 2px; */
+}
+
+.album:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.album img {
+  width: 100%;
+  vertical-align: top;
+  outline: rgba(255, 255, 255, 0.9) solid 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .albumes-recomendados {
+    display: none;
+  }
+}

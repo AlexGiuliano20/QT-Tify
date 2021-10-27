@@ -7,3 +7,35 @@ menu.addEventListener("click", function () {
   menuLinks.classList.toggle("active");
 });
 //#endregion
+
+//#region  caroucel
+const fila = document.querySelector(".carousel__contenedor");
+const albumes = document.querySelector(".album");
+const flechaIzquierda = document.getElementById("flecha-izquierda");
+const flechaDerecha = document.getElementById("flecha-derecha");
+
+/* flecha derecha */
+flechaDerecha.addEventListener("click", () => {
+  fila.scrollLeft += fila.offsetWidth;
+});
+
+/* flecha izquierda */
+flechaIzquierda.addEventListener("click", () => {
+  fila.scrollLeft -= fila.offsetWidth;
+});
+
+/* hover */
+albumes.forEach((album) => {
+  album.addEventListener("mouseenter", (e) => {
+    const elemento = e.currentTarget;
+    setTimeout(() => {
+      albumes.forEach((album) => album.classList.remove("hover"));
+      elemento.classList.add("hover");
+    }, 300);
+  });
+});
+
+fila.addEventListener("mouseleave", () => {
+  albumes.forEach((albumes) => album.classList.remove("hover"));
+});
+//#endregion
