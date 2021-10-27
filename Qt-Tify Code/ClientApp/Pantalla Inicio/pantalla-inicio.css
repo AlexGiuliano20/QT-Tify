@@ -17,6 +17,76 @@
   font-family: "Roboto", sans-serif;
 }
 
+body{
+  background: radial-gradient(var(--fondo-alt) 50%, var(--first-color) 50% );
+	animation: gradient 60s ease infinite;
+	background-size: 400% 400%;
+	height: 100vh;
+  position: relative;
+}
+
+@keyframes gradient {
+	0% {
+    
+		background-position: 0% 20%;
+	}
+  10%{
+    background-position: 50% 50%;
+  }
+
+	100% {
+		background-position: 50% 50%;
+	}
+}
+
+@media screen and (max-width: 768px){
+  body{
+    background: linear-gradient(45deg, var(--second-color), var(--second-color-alt),var(--third-color-alt),var(--third-color));
+    animation: gradient 10s ease infinite;
+	  background-size: 500% 500%;
+	  height: 100vh;
+    position: relative;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  
+}
+}
+
+.titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 3px solid var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 3rem 5rem;
+  text-align: center;
+  z-index:1;
+}
+@media screen and (max-width: 768px){
+  .titulo{
+    
+    width: 70%;
+  }
+}
+
+
 .nav-container {
   width: 100%;
   background-color: var(--fondo);
@@ -112,6 +182,7 @@
     left: -100%;
     opacity: 0;
     transition: all 0.5s ease;
+    z-index: 50;
   }
 
   #navbar__logo {
