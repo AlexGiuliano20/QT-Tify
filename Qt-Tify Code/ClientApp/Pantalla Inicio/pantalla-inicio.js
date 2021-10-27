@@ -25,17 +25,17 @@ flechaIzquierda.addEventListener("click", () => {
 });
 
 /* hover */
-albumes.forEach((album) => {
-  album.addEventListener("mouseenter", (e) => {
-    const elemento = e.currentTarget;
-    setTimeout(() => {
-      albumes.forEach((album) => album.classList.remove("hover"));
-      elemento.classList.add("hover");
-    }, 300);
-  });
-});
+// albumes.forEach((album) => {
+//   album.addEventListener("mouseenter", (e) => {
+//     const elemento = e.currentTarget;
+//     setTimeout(() => {
+//       albumes.forEach((album) => album.classList.remove("hover"));
+//       elemento.classList.add("hover");
+//     }, 300);
+//   });
+// });
 
-fila.addEventListener("mouseleave", () => {
-  albumes.forEach((albumes) => album.classList.remove("hover"));
-});
+// fila.addEventListener("mouseleave", () => {
+//   albumes.forEach((albumes) => album.classList.remove("hover"));
+// });
 //#endregion

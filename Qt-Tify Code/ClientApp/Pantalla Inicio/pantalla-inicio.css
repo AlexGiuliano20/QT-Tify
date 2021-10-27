@@ -7,8 +7,9 @@
   --third-color: #da3beb;
   --third-color-alt: #92209e;
   --white: #fff;
+  --white-alt: #ddd
 }
-
+/* NAVBAR */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -223,6 +224,31 @@ footer {
   right: 0;
 }
 
+.button__bar-left, .button__bar-right{
+  display: block;
+  width: 20px;
+  height: 6.5px;
+  margin: 5px auto;
+  border-radius: 10px;
+  background: var(--white-alt);
+}
+
+.button__bar-left:nth-child(1){
+  transform: translateY(1px) rotate(-40deg);
+}
+
+.button__bar-left:nth-child(2) {
+  transform: translateY(-1px) rotate(40deg);
+}
+
+.button__bar-right:nth-child(1){
+  transform: translateY(1px) rotate(40deg);
+}
+
+.button__bar-right:nth-child(2){
+  transform: translateY(-1px) rotate(-40deg);
+}
+
 .carousel__contenedor {
   width: 100%;
   padding: 20px 0;
@@ -239,7 +265,6 @@ footer {
   min-width: 10%;
   transition: 0.3s ease all;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  /* outline:rgba(255, 255, 255, 0.9) solid 2px; */
 }
 
 .album:hover {
