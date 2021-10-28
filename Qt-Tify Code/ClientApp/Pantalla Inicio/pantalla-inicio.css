@@ -260,8 +260,8 @@ body {
   position: absolute;
   left: 0;
   height: 100%;
-  width: 70%;
-  background:var(--first-color);
+  width: 100%;
+  background:var(--fondo-alt);
   border-left: 2px solid var(--white);
   animation: typing 2s steps(10);
   animation-fill-mode: forwards;
@@ -271,17 +271,38 @@ body {
   99%{
     left: 90%;
     margin: 0 -35px 0 35px;
+    width: 70%;
   }
 
   100%{
     left: -500%;
-    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .titulo__h1{
+    font-size: 85px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .titulo__h1{
+    font-size: 55px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .titulo {
     width: 70%;
+  }
+
+  .titulo__h1{
+    font-size: 38px;
+  }
+
+  .titulo__h1::after{
+    animation:none;
+    display: none;
   }
 }
 
