@@ -17,76 +17,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-body{
-  background: radial-gradient(var(--fondo-alt) 50%, var(--first-color) 50% );
-	animation: gradient 10s ;
-	background-size: 400% 400%;
-	height: 100vh;
-  position: relative;
-}
-
- @keyframes gradient {
-	0% {
-		background-position: 100% 50%;
-	}
-  50%{
-    background-position: 50% 100%;
-  }
-
-	100% {
-		background-position: 100% 100%;
-	} 
-} 
-
-
-@media screen and (max-width: 768px){
-  body{
-    background: linear-gradient(45deg, var(--second-color), var(--second-color-alt),var(--third-color-alt),var(--third-color));
-    animation: gradient 10s ease infinite;
-	  background-size: 400% 400%;
-	  height: 100vh;
-    position: relative;
-  }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  
-}
-}
-
-.titulo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  font-size: 3rem;
-  color: var(--white);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border: 3px solid var(--white);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 3rem 5rem;
-  text-align: center;
-  z-index:1;
-}
-@media screen and (max-width: 768px){
-  .titulo{
-    
-    width: 70%;
-  }
-}
-
-
 .nav-container {
   width: 100%;
   background-color: var(--fondo);
@@ -253,6 +183,109 @@ body{
   }
 }
 
+/* FONDO */
+body {
+  background: radial-gradient(var(--fondo-alt) 50%, var(--first-color) 50%);
+  animation: gradient 60s ease infinite;
+  background-size: 400% 400%;
+  height: 100vh;
+  position: relative;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 20%;
+  }
+  10% {
+    background-position: 50% 50%;
+  }
+
+  100% {
+    background-position: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(
+      45deg,
+      var(--second-color),
+      var(--second-color-alt),
+      var(--third-color-alt),
+      var(--third-color)
+    );
+    animation: gradient 10s ease infinite;
+    background-size: 500% 500%;
+    height: 100vh;
+    position: relative;
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  font-size: 3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 3px solid var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3rem 5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+
+.titulo__h1{
+  position: relative;
+}
+
+.titulo__h1::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 70%;
+  background:var(--first-color);
+  border-left: 2px solid var(--white);
+  animation: typing 2s steps(10);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  99%{
+    left: 90%;
+    margin: 0 -35px 0 35px;
+  }
+
+  100%{
+    left: -500%;
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titulo {
+    width: 70%;
+  }
+}
+
 /* FOOTER */
 
 footer {
@@ -295,7 +328,8 @@ footer {
   right: 0;
 }
 
-.button__bar-left, .button__bar-right{
+.button__bar-left,
+.button__bar-right {
   display: block;
   width: 20px;
   height: 6.5px;
@@ -304,7 +338,7 @@ footer {
   background: var(--white-alt);
 }
 
-.button__bar-left:nth-child(1){
+.button__bar-left:nth-child(1) {
   transform: translateY(1px) rotate(-40deg);
 }
 
@@ -312,11 +346,11 @@ footer {
   transform: translateY(-1px) rotate(40deg);
 }
 
-.button__bar-right:nth-child(1){
+.button__bar-right:nth-child(1) {
   transform: translateY(1px) rotate(40deg);
 }
 
-.button__bar-right:nth-child(2){
+.button__bar-right:nth-child(2) {
   transform: translateY(-1px) rotate(-40deg);
 }
 
