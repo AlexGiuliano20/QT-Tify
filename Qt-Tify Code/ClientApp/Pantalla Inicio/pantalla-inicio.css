@@ -223,29 +223,27 @@ body {
   transform: translateY(0);
   transform: translateX(-50%);
   animation: aparicionTitulo 3s;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
 
-
-
 @keyframes aparicionTitulo {
-  20%{
+  20% {
     opacity: 0.22;
   }
-  40%{
-    opacity: 0.40;
+  40% {
+    opacity: 0.4;
   }
-  60%{
-    opacity: 0.60;
+  60% {
+    opacity: 0.6;
   }
-  80%{
-    opacity: 0.80;
+  80% {
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
-      top: 27%;
+    top: 27%;
   }
 }
 
@@ -376,17 +374,17 @@ footer {
 }
 
 @keyframes aparicionCarousel {
-  20%{
-    opacity: 0.20;
+  20% {
+    opacity: 0.2;
   }
-  40%{
-    opacity: 0.40;
+  40% {
+    opacity: 0.4;
   }
-  60%{
-    opacity: 0.60;
+  60% {
+    opacity: 0.6;
   }
-  80%{
-    opacity: 0.80;
+  80% {
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
