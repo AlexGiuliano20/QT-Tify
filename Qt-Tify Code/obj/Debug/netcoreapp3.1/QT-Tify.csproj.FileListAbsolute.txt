@@ -34,3 +34,41 @@ C:\Users\pc\source\repos\QT-Tify\QT-Tify\obj\Debug\netcoreapp3.1\QT-Tify.dll
 C:\Users\pc\source\repos\QT-Tify\QT-Tify\obj\Debug\netcoreapp3.1\QT-Tify.pdb
 C:\Users\pc\source\repos\QT-Tify\QT-Tify\obj\Debug\netcoreapp3.1\QT-Tify.genruntimeconfig.cache
 C:\Users\pc\source\repos\QT-Tify\QT-Tify\obj\Debug\netcoreapp3.1\QT-Tify.csproj.CopyComplete
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\QT-Tify.exe
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\QT-Tify.deps.json
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\QT-Tify.runtimeconfig.json
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\QT-Tify.runtimeconfig.dev.json
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\QT-Tify.dll
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\QT-Tify.pdb
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\QT-Tify.Views.dll
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\bin\Debug\netcoreapp3.1\QT-Tify.Views.pdb
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.csproj.AssemblyReference.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.AssemblyInfoInputs.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.AssemblyInfo.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.RazorAssemblyInfo.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.RazorAssemblyInfo.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\staticwebassets\QT-Tify.StaticWebAssets.Manifest.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\staticwebassets\QT-Tify.StaticWebAssets.xml
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\scopedcss\bundle\QT-Tify.styles.css
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.TagHelpers.input.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.TagHelpers.output.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.RazorCoreGenerate.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.RazorTargetAssemblyInfo.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.RazorTargetAssemblyInfo.cs
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.Views.pdb
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.dll
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.pdb
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.genruntimeconfig.cache
+C:\Users\pc\source\repos\QT-Tify\QT-Tify Code\obj\Debug\netcoreapp3.1\QT-Tify.csproj.CopyComplete
