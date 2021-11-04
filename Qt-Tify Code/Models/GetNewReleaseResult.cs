@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ConsumeSpotifyWebAPI.Models
+namespace QTtify.Models
 {
 
     public class GetNewReleaseResult
@@ -25,7 +25,7 @@ namespace ConsumeSpotifyWebAPI.Models
     public class Item
     {
         public string album_type { get; set; }
-        public Artist[] artists { get; set; }
+        public Artist_newRelease[] artists_newRelease { get; set; }
         public object[] available_markets { get; set; }
         public External_Urls external_urls { get; set; }
         public string href { get; set; }
@@ -44,7 +44,7 @@ namespace ConsumeSpotifyWebAPI.Models
         public string spotify { get; set; }
     }
 
-    public class Artist
+    public class Artist_newRelease
     {
         public External_Urls1 external_urls { get; set; }
         public string href { get; set; }

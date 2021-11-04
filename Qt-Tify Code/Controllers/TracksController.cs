@@ -1,5 +1,5 @@
-﻿using ConsumeSpotifyWebAPI.Models;
-using ConsumeSpotifyWebAPI.Services;
+﻿using QTtify.Models;
+using QTtify.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -9,15 +9,17 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ConsumeSpotifyWebAPI.Controllers
+namespace QTtify.Controllers
 {
-    public class HomeController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class TracksController : ControllerBase
     {
         private readonly ISpotifyAccountService _spotifyAccountService;
         private readonly IConfiguration _configuration;
         private readonly ISpotifyService _spotifyService;
 
-        public HomeController(
+        public TracksController( //Constructor
             ISpotifyAccountService spotifyAccountService,
             IConfiguration configuration,
             ISpotifyService spotifyService)
@@ -26,15 +28,11 @@ namespace ConsumeSpotifyWebAPI.Controllers
             _configuration = configuration;
             _spotifyService = spotifyService;
         }
-
-        public async Task<IActionResult> Index()
-        {
-            var newReleases = await GetReleases();
-
-            return View(newReleases); //Lo manda y se lo deja picando al frontend
-        }
-
-        private async Task<IEnumerable<Release>> GetReleases() //Parametros dados del new releases
+        
+        //Nuevos lanzamientos
+        [HttpGet]
+        [Route("newReleases")]
+        public async Task<IEnumerable<Release>> GetReleases() //Parametros dados del new releases
         {
             try
             {
@@ -53,16 +51,7 @@ namespace ConsumeSpotifyWebAPI.Controllers
                 return Enumerable.Empty<Release>(); //Devuelve conjunto vacío
             }
         }
+        
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

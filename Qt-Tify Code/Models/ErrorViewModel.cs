@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsumeSpotifyWebAPI.Models
+namespace QTtify.Models
 {
     public class ErrorViewModel
     {

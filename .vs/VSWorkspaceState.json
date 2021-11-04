@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\QT-Tify Code"
+    "\\QT-Tify Code",
+    "\\QT-Tify Code\\ClientApp",
+    "\\QT-Tify Code\\ClientApp\\Pantalla Inicio"
   ],
-  "SelectedNode": "\\QT-Tify Code\\Program.cs",
+  "SelectedNode": "\\QT-Tify Code\\ClientApp\\index.html",
   "PreviewInSolutionExplorer": false
 }
