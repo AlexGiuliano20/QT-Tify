@@ -79,7 +79,7 @@ namespace QTtify
                     pattern: "{controller=Home}/{action=Index}/{id?}");*/
             });
 
-            app.UseSwagger();
+            app.UseSwagger(); 
 
             app.UseSwaggerUI(options =>
             {

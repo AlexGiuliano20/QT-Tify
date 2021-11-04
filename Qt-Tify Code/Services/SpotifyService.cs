@@ -46,7 +46,7 @@ namespace QTtify.Services
         {
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
-            var response = await _httpClient.GetAsync($"artists?/id={id}");
+            var response = await _httpClient.GetAsync($"artists?/id={id}"); //por esto debe ser que no funciona
             response.EnsureSuccessStatusCode();
 
             using var responseStream = await response.Content.ReadAsStreamAsync();

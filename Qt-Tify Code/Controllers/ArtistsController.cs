@@ -28,7 +28,7 @@ namespace QTtify.Controllers
 
         //Artista Ejemplo
         [HttpGet]
-        [Route("ejemplo")]
+        [Route("ejemplo")] //Endpoint: https://localhost:44398/api/Artists/ejemplo
         public async Task<Artist> GetArtist() //Parametros dados del new releases   PARA QUE RECIBA LA ID DE AFUERA, ver min. 1:28:00 de mvc rest api 5 horas
         {
             try
@@ -50,7 +50,7 @@ namespace QTtify.Controllers
         }
 
         //Artista Individual por ID
-        [HttpGet("{id}")]
+        [HttpGet("{id}")] //endpoint: https://localhost:44398/api/Artists/{id}
         public async Task<Artist> GetArtist(String id) //Parametros dados del new releases   PARA QUE RECIBA LA ID DE AFUERA, ver min. 1:28:00 de mvc rest api 5 horas
         {
             try

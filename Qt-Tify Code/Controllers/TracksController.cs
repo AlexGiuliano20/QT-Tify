@@ -29,9 +29,9 @@ namespace QTtify.Controllers
             _spotifyService = spotifyService;
         }
         
-        //Nuevos lanzamientos
+        //Nuevos lanzamientos de US     FIXEAR LINEA 39 EN SpotifyService (Por ahora funciona pero le cambia el nombre del artista a todos los lanzamientos)
         [HttpGet]
-        [Route("newReleases")]
+        [Route("newReleases")] //Endpoint: https://localhost:44398/api/Tracks/newReleases
         public async Task<IEnumerable<Release>> GetReleases() //Parametros dados del new releases
         {
             try
@@ -40,18 +40,41 @@ namespace QTtify.Controllers
                     _configuration["Spotify:ClientId"],
                     _configuration["Spotify:ClientSecret"]);
 
-                var newReleases = await _spotifyService.GetNewReleases("US", 20, token); //parametros especificos de la función new releases
+                var newReleases = await _spotifyService.GetNewReleases("US", 20, token); //parametros de ejemplo
 
                 return newReleases;
             }
-            catch (Exception ex) //En caso de que no pueda ejecutar la función
+            catch (Exception ex)
             {
                 Debug.Write(ex);
 
                 return Enumerable.Empty<Release>(); //Devuelve conjunto vacío
             }
         }
-        
+
+        //Nuevos lanzamientos especificando pais
+        [HttpGet]
+        [Route("newReleases/{pais}")] //Endpoint: https://localhost:44398/api/Tracks/newReleases/{pais}  //EJEMPLOS   newReleases/AR   newReleases/US   newReleases/ES  
+        public async Task<IEnumerable<Release>> GetReleasesPais(String pais) //Parametros dados del new releases
+        {
+            try
+            {
+                var token = await _spotifyAccountService.GetToken( //Token de autorización para entrar a la API de spotify
+                    _configuration["Spotify:ClientId"],
+                    _configuration["Spotify:ClientSecret"]);
+
+                var newReleases = await _spotifyService.GetNewReleases(pais, 20, token); //parametros de ejemplo
+
+                return newReleases;
+            }
+            catch (Exception ex)
+            {
+                Debug.Write(ex);
+
+                return Enumerable.Empty<Release>(); //Devuelve conjunto vacío
+            }
+        }
+
 
     }
 }
