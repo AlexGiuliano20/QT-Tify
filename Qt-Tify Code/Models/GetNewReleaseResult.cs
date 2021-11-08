@@ -25,7 +25,7 @@ namespace QTtify.Models
     public class Item
     {
         public string album_type { get; set; }
-        public Artist_newRelease[] artists_newRelease { get; set; }
+        public Artist[] artists { get; set; }
         public object[] available_markets { get; set; }
         public External_Urls external_urls { get; set; }
         public string href { get; set; }
@@ -44,7 +44,7 @@ namespace QTtify.Models
         public string spotify { get; set; }
     }
 
-    public class Artist_newRelease
+    public class Artist
     {
         public External_Urls1 external_urls { get; set; }
         public string href { get; set; }

@@ -35,32 +35,8 @@ namespace QTtify.Services
                 Date = i.release_date,
                 ImageUrl = i.images.FirstOrDefault().url,
                 Link = i.external_urls.spotify,
-                Artists = "SI JAJA"
-               // Artists = string.Join(",", i.artists_newRelease.Select(i => i.name)) //Error en esta linea
+               Artists = string.Join(",", i.artists.Select(i => i.name))
             });
-        }
-
-        
-        //GET ARTISTA
-        public async Task<Artist> GetArtist(string id, string accessToken)
-        {
-            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-
-            var response = await _httpClient.GetAsync($"artists?/id={id}"); //por esto debe ser que no funciona
-            response.EnsureSuccessStatusCode();
-
-            using var responseStream = await response.Content.ReadAsStreamAsync();
-            var responseObject = await JsonSerializer.DeserializeAsync<GetArtistResult>(responseStream);
-
-            Artist artista = new Artist {
-                Name = responseObject.root.name,
-                ImageUrl = responseObject.root.images.FirstOrDefault().url,
-                Link = responseObject.root.external_urls.spotify
-            };
-           
-
-            return artista;
-
         }
     }
 }
