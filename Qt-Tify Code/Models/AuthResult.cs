@@ -1,4 +1,4 @@
-﻿namespace ConsumeSpotifyWebAPI.Models
+﻿namespace QTtify.Models
 {
     public class AuthResult
     {

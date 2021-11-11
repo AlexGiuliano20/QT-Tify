@@ -1,4 +1,4 @@
-﻿using ConsumeSpotifyWebAPI.Models;
+﻿using QTtify.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace ConsumeSpotifyWebAPI.Services
+namespace QTtify.Services
 {
     public class SpotifyAccountService : ISpotifyAccountService
     {

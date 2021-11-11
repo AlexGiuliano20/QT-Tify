@@ -1,4 +1,4 @@
-﻿using ConsumeSpotifyWebAPI.Models;
+﻿using QTtify.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace ConsumeSpotifyWebAPI.Services
+namespace QTtify.Services
 {
     public class SpotifyService : ISpotifyService
     {
@@ -18,6 +18,7 @@ namespace ConsumeSpotifyWebAPI.Services
             _httpClient = httpClient;
         }
 
+        //GET NUEVOS LANZAMIENTOS
         public async Task<IEnumerable<Release>> GetNewReleases(string countryCode, int limit, string accessToken) //Funcion que devuelve los nuevos lanzamientos. Los mismos parametros de ISpotifyService
         {
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken); //autorización con token (hay que poner siempre en cada funcion)
@@ -34,7 +35,7 @@ namespace ConsumeSpotifyWebAPI.Services
                 Date = i.release_date,
                 ImageUrl = i.images.FirstOrDefault().url,
                 Link = i.external_urls.spotify,
-                Artists = string.Join(",", i.artists.Select(i => i.name))
+               Artists = string.Join(",", i.artists.Select(i => i.name))
             });
         }
     }
